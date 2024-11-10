@@ -12,7 +12,7 @@ const server = http.createServer(app);
 const io = new Server(server);
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY; // Hent API-nøglen fra miljøvariabler
 
-const roleDescription = "skriv kun om biologi."
+const roleDescription = process.env.CHATBOT_ROLE;
 messages = [{ role: 'system', content: roleDescription }];
 
 app.use(express.static('public'));

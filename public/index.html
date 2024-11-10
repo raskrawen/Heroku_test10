@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chatbot Interface</title>
+  <title>Billie Eilish Chatbot</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -75,7 +75,7 @@
 
     socket.on("bot message", function(msg) {
       const item = document.createElement("li");
-      item.textContent = "Bot: " + msg;
+      item.textContent = "BillieBot: " + msg;
       item.className = "bot";
       messages.appendChild(item);
       messages.scrollTop = messages.scrollHeight;
