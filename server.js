@@ -28,6 +28,7 @@ io.on('connection', (socket) => {
         {
           model: 'gpt-4o-mini',
           messages: messages,
+          user: socket.id
         },
         {
           headers: { Authorization: `Bearer ${OPENAI_API_KEY}` }
